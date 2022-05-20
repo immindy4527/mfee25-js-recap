@@ -11,12 +11,12 @@ let animals = [
         animals.size = 'small'  //加一個屬性
         return animals  //回傳塞進去空陣列
   })
-  console.log(findA10Index);
+  let bear = findA10Index.find((animal, index) => {
+      return animal.en == 'bear'
+  })
+  bear.size = 'large'
+  
+  let pig = { id: 'a35', en: 'pig', cn: '豬', num: 3, size: medium }
 
-//   [
-//     { id: 'a1', en: 'cat', cn: '貓', num: 30, size: 'small' },
-//     { id: 'a2', en: 'dog', cn: '狗', num: 10, size: 'small' },
-//     { id: 'a3', en: 'rabbit', cn: '兔', num: 5, size: 'small' },
-//     { id: 'a4', en: 'bear', cn: '熊', num: 15, size: 'small' },
-//     { id: 'a5', en: 'mouse', cn: '鼠', num: 20, size: 'small' }
-//   ]
+
+  console.log(bear);
