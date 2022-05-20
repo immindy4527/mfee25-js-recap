@@ -25,19 +25,19 @@
     // }) ("pink")
 
     // n =整段總共有幾個數字
-    let fibonacciGenerator = (n) => {
+    let fibonacciGenerator = (length) => {
         let result = [];
 
-        if(n == 1){
+        if(length == 1){
             result[0] = 0;
-        }else if(n == 2){
-            result[0] = 0;
-            result[1] = 1;
-        }else if(n >2){
+        }else if(length == 2){
             result[0] = 0;
             result[1] = 1;
-            for (let i = 2; i <  n; i++){
-                result[i] = result[i-1] + result[i-2]
+        }else if(length >2){
+            result[0] = 0;
+            result[1] = 1;
+            for (let index = 2; index <  length; index ++){
+                result[index] = result[index-1] + result[index-2]
             }
         }
         return result;
